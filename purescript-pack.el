@@ -16,8 +16,11 @@
 (add-hook 'purescript-mode-hook (lambda ()
                                   (custom-set-variables
                                    '(capitalized-words-mode t)
-                                   '(turn-on-eldoc-mode t)
-                                   '(turn-on-purescript-indent t))))
+                                   '(turn-on-eldoc-mode t))))
+
+;;(add-hook 'purescript-mode-hook 'turn-on-purescript-indentation)
+(add-hook 'purescript-mode-hook 'turn-on-purescript-indent)
+;;(add-hook 'purescript-mode-hook 'turn-on-purescript-simple-indent)
 
 (require 'psci)
 (add-hook 'purescript-mode-hook 'inferior-psci-mode)
