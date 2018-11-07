@@ -1,4 +1,4 @@
-;;; haskell-pack.el --- Haskell configuration
+;;; purescript-pack.el --- Haskell configuration
 
 ;;; Commentary:
 
